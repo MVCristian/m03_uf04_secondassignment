@@ -42,10 +42,16 @@ public class CarritoDeLaCompra implements Finalizable {
     public void elimina(Detalle detalle) {
         carrito.remove(detalle);
     }
+    
+    
+    
 
     @Override
-    public double checkout() {
+    public double checkout() { //total carrito
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
+    
     
 }
