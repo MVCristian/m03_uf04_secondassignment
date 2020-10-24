@@ -17,7 +17,7 @@ package cat.copernic.m03_uf04_secondassignment.exercicilliure;
  * 
  * 
  */
-public class Item {
+public abstract class Item {
     private double precio;
     private String descripcion;
     private String nombre;
@@ -30,6 +30,7 @@ public class Item {
         this.id = id;
     }
 
+    
     public double getPrecio() {
         return precio;
     }

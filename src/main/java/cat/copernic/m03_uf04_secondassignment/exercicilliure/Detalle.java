@@ -14,10 +14,10 @@ package cat.copernic.m03_uf04_secondassignment.exercicilliure;
  */
 public class Detalle {
     private int id;
-    private String cantidad;
+    private int cantidad;
     private Item item;
 
-    public Detalle(int id, String cantidad, Item item) {
+    public Detalle(int id, int cantidad, Item item) {
         this.id = id;
         this.cantidad = cantidad;
         this.item = item;
@@ -31,11 +31,11 @@ public class Detalle {
         this.id = id;
     }
 
-    public String getCantidad() {
+    public int getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(String cantidad) {
+    public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
 
