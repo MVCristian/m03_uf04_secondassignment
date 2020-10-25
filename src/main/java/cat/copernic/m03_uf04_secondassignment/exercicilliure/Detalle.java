@@ -46,6 +46,13 @@ public class Detalle {
     public void setItem(Item item) {
         this.item = item;
     }
+
+    @Override
+    public String toString() {
+        return "Detalle{" + "id=" + id + ", cantidad=" + cantidad + ", item=" + item + '}';
+    }
+    
+    
     
     
     

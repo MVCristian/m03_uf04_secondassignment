@@ -35,7 +35,7 @@ public class CarritoDeLaCompra implements Finalizable {
     private ArrayList<Detalle> carrito = new ArrayList<>();
     
     
-    public void añade(Detalle detalle) {
+    public void anade(Detalle detalle) {
         carrito.add(detalle);
     }
     
@@ -48,7 +48,17 @@ public class CarritoDeLaCompra implements Finalizable {
 
     @Override
     public double checkout() { //total carrito
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double totalCompra=0;
+        int cantidad;
+        double precio;
+        
+        for(int i = 0; i<carrito.size(); i++){
+            cantidad=carrito.get(i).getCantidad();
+            precio = carrito.get(i).getItem().getPrecio();
+            totalCompra += (cantidad * precio);
+            System.out.println(carrito.get(i).toString());
+        }
+        return totalCompra;
     }
     
     
